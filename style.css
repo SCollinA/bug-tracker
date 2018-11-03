@@ -6,6 +6,7 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    font-size: 10px;
 }
 
 *, ::before, ::after {
@@ -66,6 +67,7 @@ html, body {
     background-color: #cc3d55;
     flex: 1;
     overflow-y: scroll;
+    font-size: 2em;
 }
 
 .bug {
@@ -81,6 +83,11 @@ html, body {
     justify-content: space-between;
 }
 
+.addUpdateDiv {
+    visibility: hidden;
+    position: absolute;
+}
+
 .bugDesc {
     display: flex;
     justify-content: flex-start;
@@ -88,6 +95,10 @@ html, body {
 
 .dateCreated {
     padding: 0 1%;
+}
+
+.issueDesc {
+    flex: 1;
 }
 
 .updateBug {
