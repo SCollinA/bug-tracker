@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+.addBug {
+    padding: 2%;
+    background-color: #bdb7e5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.projectInfo > * {
+    margin: 5px 0;
+}
+
+.featureInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.featureInfo > * {
+    margin: 5px 0;
+}
+
+#addBugButton {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bugListArea {
+    background-color: #27330f;
+    flex: 1;
+    overflow-y: scroll;
+}
