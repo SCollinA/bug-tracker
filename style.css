@@ -71,4 +71,62 @@ html, body {
 .bug {
     background-color: #bdb7e5;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.bugInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bugDesc {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dateCreated {
+    padding: 0 1%;
+}
+
+.updateBug {
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    position: absolute;
+}
+
+.updateBug > textarea {
+    flex: 1;
+    margin: 0 1%;
+}
+
+.bugUpdate {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.expandedBug {
+    flex: 1;
+    background-color: #27330f;
+    padding: 2%;
+    /* display: flex;
+    flex-direction: column; */
+    overflow-y: scroll;
+    visibility: hidden;
+    position: absolute;
+}
+
+.expandedBug > .bugUpdate {
+    background-color: #bdb7e5;
+    margin: 1% 0;
+}
+
+.timeStamp {
+    margin: 0 1%;
+}
+
+.bugNote {
+    flex: 1;
 }
