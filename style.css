@@ -14,10 +14,10 @@ html, body {
 }
 
 .addBug {
+    background-color: #44b2e5;
     padding: 2%;
-    background-color: #bdb7e5;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .projectInfo {
@@ -45,8 +45,27 @@ html, body {
     border-radius: 10px;
 }
 
+
+
+
+.searchBugs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #90cc3d;
+    padding: 1% 2%;
+}
+
+.searchBugs > textarea {
+    flex: 1;
+    margin: 0 5px;
+}
+
+
+
 .bugListArea {
-    background-color: #27330f;
+    background-color: #cc3d55;
     flex: 1;
     overflow-y: scroll;
 }
+
+
