@@ -1,0 +1,79 @@
+<!-- Bug databases can be complicated or simple. A minimal useful bug database must include the following data for every bug:
+
+complete steps to reproduce the bug
+expected behavior
+observed (buggy) behavior
+who it’s assigned to
+whether it has been fixed or not -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BugTracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- turn overflow off for all elements -->
+    <div class="addBug">
+        <div class="projectInfo">
+            <select name="projectSelect" id="projectSelect"></select>
+            <button id="addProject"></button>
+        </div>
+        <div class="featureInfo">
+            <select name="featureSelect" id="featureSelect"></select>
+            <button id="addFeature"></button>
+        </div>
+        <div class="issueArea">
+            <textarea name="issueDesc" id="issueDesc" cols="30" rows="10"></textarea>
+        </div>
+        <div class="addBugButtonDiv">
+            <button id="addBugButton"></button>
+        </div>
+    </div>
+    <div class="bugListArea">
+        <div class="searchBugs">
+            <textarea name="findBug" id="findBug" cols="30" rows="10"></textarea>
+            <select name="groupBy" id="groupBy"></select>
+        </div>
+        <div class="bugList">
+            <!-- turn overflow on for this element -->
+            <div class="bug">
+                <!-- change flex column to row on click -->
+                <div class="bugInfo">
+                    <!-- change flex column to row on click -->
+                    <h4 class=ProjectName></h4>
+                    <h6 class="featureName"></h6>
+                    <div class="addUpdateDiv">
+                        <!-- unhide this one on click -->
+                        <button class="addUpdate"></button>
+                    </div>
+                </div>
+                <div class="bugDesc">
+                    <p class="issueDesc"></p>
+                    <p class="dateCreated"></p>
+                </div>
+                <div class="updateBug">
+                    <!-- hide this one until add update button clicked -->
+                    <textarea name="updateDesc" id="updateDesc" cols="30" rows="10"></textarea>
+                    <button class="submitUpdate"></button>
+                </div>
+                <div class="lastUpdate">
+                    <!-- hide this one on click -->
+                    <p class="notesDesc"></p>
+                    <p class="timeLastUpdated"></p>
+                </div>
+                <div class="expandedBug">
+                    <!-- turn overflow on for this element -->
+                    <div class="bugUpdate">
+                        <p class="bugNote"></p>
+                        <p class="timeStamp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
