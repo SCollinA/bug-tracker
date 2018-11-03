@@ -111,9 +111,6 @@ html, body {
     flex: 1;
     background-color: #27330f;
     padding: 2%;
-    /* display: flex;
-    flex-direction: column; */
-    overflow-y: scroll;
     visibility: hidden;
     position: absolute;
 }
