@@ -62,10 +62,13 @@ html, body {
 
 
 
-.bugListArea {
+.bugList {
     background-color: #cc3d55;
     flex: 1;
     overflow-y: scroll;
 }
 
-
+.bug {
+    background-color: #bdb7e5;
+    display: flex;
+}
